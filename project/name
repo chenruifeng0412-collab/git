@@ -1,0 +1,17 @@
+#include <iostream>
+#include <vector>
+#include <memory>
+
+class Graphic {
+public:
+    virtual ~Graphic() = default;
+    virtual void draw() const = 0;
+};
+
+class Circle:public Graphic{
+private:
+    double radius;
+public:
+    Circle(double r):radius(r){}
+    
+}
